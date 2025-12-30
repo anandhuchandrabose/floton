@@ -170,7 +170,7 @@ export default function App() {
           <div className="intro-logo">
             <div className="word" id="word-1">
               <h1>
-                <span>Floton</span>
+                <span>Floton </span>
               </h1>
             </div>
             <div className="word" id="word-2">
@@ -246,13 +246,15 @@ export default function App() {
                 </p>
               </Copy>
             </div>
+
             <AnimatedButton
-              label="Discover More"
+              label="Discover "
               route="/studio"
               animateOnScroll={false}
               delay={showPreloader ? 10.3 : 1.15}
             />
-          </div>
+            </div>
+
         </div>
         <div className="hero-stats">
           <div className="container">

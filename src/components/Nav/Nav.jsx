@@ -117,8 +117,6 @@ const Nav = () => {
         duration: 2,
         onStart: () => {
           menu.style.pointerEvents = "all";
-        },
-        onStart: () => {
           splitTextRefs.current.forEach((split, index) => {
             gsap.to(split.lines, {
               y: "0%",

@@ -42,7 +42,7 @@
 
 .btn .button-text {
   position: absolute;
-  background-color: red;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,6 +54,7 @@
   line-height: 1;
   white-space: nowrap;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+
 }
 
 .btn .line {
