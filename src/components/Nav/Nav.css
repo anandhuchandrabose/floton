@@ -47,6 +47,10 @@
 }
 
 .link a h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
   text-decoration: none;
   color: var(--base-300);
   font-size: 4rem;
@@ -89,9 +93,8 @@
 
 /* SplitText mask styles */
 .split-line {
+  display: block;
   overflow: hidden;
-  will-change: transform;
-  pointer-events: auto;
 }
 
 @media (max-width: 1000px) {

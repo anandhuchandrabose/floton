@@ -52,34 +52,6 @@ export default function App() {
 
     if (showPreloader) {
       setLoaderAnimating(true);
-      const counts = document.querySelectorAll(".count");
-
-      counts.forEach((count, index) => {
-        const digits = count.querySelectorAll(".digit h1");
-
-        tl.to(
-          digits,
-          {
-            y: "0%",
-            duration: 1,
-            stagger: 0.075,
-          },
-          index * 1
-        );
-
-        if (index < counts.length) {
-          tl.to(
-            digits,
-            {
-              y: "-100%",
-              duration: 1,
-              stagger: 0.075,
-            },
-            index * 1 + 1
-          );
-        }
-      });
-
       tl.to(".spinner", {
         opacity: 0,
         duration: 0.3,
@@ -181,48 +153,6 @@ export default function App() {
           <div className="spinner-container">
             <div className="spinner"></div>
           </div>
-          <div className="counter">
-            <div className="count">
-              <div className="digit">
-                <h1>0</h1>
-              </div>
-              <div className="digit">
-                <h1>0</h1>
-              </div>
-            </div>
-            <div className="count">
-              <div className="digit">
-                <h1>2</h1>
-              </div>
-              <div className="digit">
-                <h1>7</h1>
-              </div>
-            </div>
-            <div className="count">
-              <div className="digit">
-                <h1>6</h1>
-              </div>
-              <div className="digit">
-                <h1>5</h1>
-              </div>
-            </div>
-            <div className="count">
-              <div className="digit">
-                <h1>9</h1>
-              </div>
-              <div className="digit">
-                <h1>8</h1>
-              </div>
-            </div>
-            <div className="count">
-              <div className="digit">
-                <h1>9</h1>
-              </div>
-              <div className="digit">
-                <h1>9</h1>
-              </div>
-            </div>
-          </div>
         </div>
       )}
       <Nav />
@@ -234,12 +164,12 @@ export default function App() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-header">
-              <Copy animateOnScroll={false} delay={showPreloader ? 10 : 0.85}>
+              <Copy animateOnScroll={false} delay={showPreloader ? 4 : 0.85}>
                 <h1>Spaces that feel rooted, human, and quietly bold</h1>
               </Copy>
             </div>
             <div className="hero-tagline">
-              <Copy animateOnScroll={false} delay={showPreloader ? 10.15 : 1}>
+              <Copy animateOnScroll={false} delay={showPreloader ? 4.15 : 1}>
                 <p>
                   At Terrene, we shape environments that elevate daily life,
                   invite pause, and speak through texture and light.
@@ -251,7 +181,7 @@ export default function App() {
               label="Discover "
               route="/studio"
               animateOnScroll={false}
-              delay={showPreloader ? 10.3 : 1.15}
+              delay={showPreloader ? 6.3 : 1.15}
             /> */}
             </div>
 
@@ -260,52 +190,52 @@ export default function App() {
           <div className="container">
             <div className="stat">
               <div className="stat-count">
-                <Copy delay={0.1}>
+                <Copy animateOnScroll={false} delay={0.1}>
                   <h2>225+</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
-                <Copy delay={0.15}>
+                <Copy animateOnScroll={false} delay={0.15}>
                   <p>Completed design studies</p>
                 </Copy>
               </div>
             </div>
             <div className="stat">
               <div className="stat-count">
-                <Copy delay={0.2}>
+                <Copy animateOnScroll={false} delay={0.2}>
                   <h2>36</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
-                <Copy delay={0.25}>
+                <Copy animateOnScroll={false} delay={0.25}>
                   <p>Ongoing spatial explorations</p>
                 </Copy>
               </div>
             </div>
             <div className="stat">
               <div className="stat-count">
-                <Copy delay={0.3}>
+                <Copy animateOnScroll={false} delay={0.3}>
                   <h2>12</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
-                <Copy delay={0.35}>
+                <Copy animateOnScroll={false} delay={0.35}>
                   <p>Cross-disciplinary collaborators</p>
                 </Copy>
               </div>
             </div>
             <div className="stat">
               <div className="stat-count">
-                <Copy delay={0.4}>
+                <Copy animateOnScroll={false} delay={0.4}>
                   <h2>98%</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
-                <Copy delay={0.45}>
+                <Copy animateOnScroll={false} delay={0.45}>
                   <p>Return rate across commissions</p>
                 </Copy>
               </div>

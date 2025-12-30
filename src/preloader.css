@@ -86,42 +86,13 @@
   }
 }
 
-.loader .counter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.loader .count {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-
-.loader .digit {
-  flex: 1;
-  padding-top: 1rem;
-}
-
-.loader .count .digit h1 {
-  font-size: 15rem;
-  font-weight: 400;
-  color: var(--base-400);
-}
-
 .loader .line,
-.loader .word,
-.loader .count .digit {
+.loader .word {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .loader .line h1,
-.loader .line p,
-.loader .count .digit h1 {
+.loader .line p {
   position: relative;
   transform: translateY(120%);
   will-change: transform;
@@ -145,11 +116,7 @@
 }
 
 @media (max-width: 1000px) {
-  .loader .counter .count .digit h1 {
+  .loader .line h1 {
     font-size: 7rem;
-  }
-
-  .loader .counter .count .digit {
-    padding-top: 0.25rem;
   }
 }
