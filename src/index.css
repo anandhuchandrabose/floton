@@ -50,6 +50,7 @@
   width: 100%;
   max-width: 40rem;
   margin: 0 auto;
+  margin-top: 5rem;
   text-align: center;
   color: var(--base-200);
 }
@@ -195,7 +196,7 @@
 .featured-projects-container {
   position: relative;
   width: 100vw;
-  padding: 10rem 0 0 0;
+  padding: 5rem 0 0 0;
   color: var(--base-100);
   overflow: hidden;
 }

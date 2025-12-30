@@ -247,12 +247,12 @@ export default function App() {
               </Copy>
             </div>
 
-            <AnimatedButton
+            {/* <AnimatedButton
               label="Discover "
               route="/studio"
               animateOnScroll={false}
               delay={showPreloader ? 10.3 : 1.15}
-            />
+            /> */}
             </div>
 
         </div>
