@@ -151,14 +151,14 @@ const Footer = () => {
       <div className="footer-outro">
         <div className="container">
           <div className="footer-header">
-            <img src="/logos/terrene-footer-logo.svg" alt="" />
+            <img src="/logos/falogog.png" alt="" />
           </div>
           <div className="footer-copyright">
             <p>
-              Developed by — <span>Codegrid</span>
+              {/* Developed by — <span>Leuwint Technologies</span> */}
             </p>
-            <p>This website is using cookies.</p>
-            <p>All rights reserverd &copy; 2025</p>
+            <p></p>
+            <p>All rights reserverd &copy; 2026</p>
           </div>
         </div>
       </div>

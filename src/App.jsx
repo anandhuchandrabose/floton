@@ -142,7 +142,7 @@ export default function App() {
           <div className="intro-logo">
             <div className="word" id="word-1">
               <h1>
-                <span>Floton </span>
+                <span>Floton &nbsp; &nbsp;</span>
               </h1>
             </div>
             <div className="word" id="word-2">
@@ -158,7 +158,7 @@ export default function App() {
       <Nav />
       <section className="hero">
         <div className="hero-bg">
-          <img src="/home/hero.jpg" alt="" />
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </div>
         <div className="hero-gradient"></div>
         <div className="container">
@@ -243,15 +243,14 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* <section className="what-we-do">
+      <section className="what-we-do">
         <div className="container">
           <div className="what-we-do-header">
             <Copy delay={0.1}>
               <h1>
-                <span className="spacer">&nbsp;</span>
-                At Terrene, we design with purpose and clarity, creating spaces
-                that speak through light, scale, and the quiet confidence of
-                lasting form.
+                {/* <span className="spacer">&nbsp;</span> */}
+                Leadership in real estate sector
+
               </h1>
             </Copy>
           </div>
@@ -263,14 +262,11 @@ export default function App() {
 
               <Copy delay={0.15}>
                 <p className="lg">
-                  We approach each build with a clarity of intent. Every plan is
-                  shaped through research, iteration, and conversation. What
-                  remains is the essential, designed to last and built to feel
-                  lived in.
+                  Floton Africa, a pioneer in urban real estate development and Class one construction, thrives on transforming complex urban spaces with exceptional architecture and thoughtful development, driven by a belief in creating lasting value through rigorous analysis and quality design.
                 </p>
               </Copy>
             </div>
-            <div className="what-we-do-col">
+            {/* <div className="what-we-do-col">
               <div className="what-we-do-tags" ref={tagsRef}>
                 <div className="what-we-do-tag">
                   <h3>Quiet</h3>
@@ -291,10 +287,10 @@ export default function App() {
                   <h3>Modular rhythm</h3>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-      </section> */}
+      </section>
       <section className="featured-projects-container">
         <div className="container">
           <div className="featured-projects-header-callout">
@@ -304,7 +300,7 @@ export default function App() {
           </div>
           <div className="featured-projects-header">
             <Copy delay={0.15}>
-              <h2>A selection of recent studies and completed spaces</h2>
+              <h2>Discover our Underconstruction and completed projects</h2>
             </Copy>
           </div>
         </div>
@@ -359,7 +355,7 @@ export default function App() {
       </section>
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Terrene"
+        header="Floton Africa"
         callout="Spaces that breathe with time"
         description="Our approach is guided by rhythm, proportion, and light, allowing every environment to grow more meaningful as it is lived in."
       />
