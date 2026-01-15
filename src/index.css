@@ -32,7 +32,7 @@
 
 .hero .hero-content {
   position: absolute;
-  top: 50svh;
+  top: 55svh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--base-100);
@@ -51,8 +51,13 @@
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 1rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   color: var(--base-200);
+  background: rgba(242, 237, 230, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(242, 237, 230, 0.12);
+  border-radius: 1rem;
 }
 
 .hero .hero-stats {

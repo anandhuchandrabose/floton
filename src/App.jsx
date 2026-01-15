@@ -168,14 +168,14 @@ export default function App() {
                 <h1>Spaces that feel rooted, human, and quietly bold</h1>
               </Copy>
             </div>
-            <div className="hero-tagline">
+            {/* <div className="hero-tagline">
               <Copy animateOnScroll={false} delay={showPreloader ? 4.15 : 1}>
                 <p>
-                  At Terrene, we shape environments that elevate daily life,
+                  At Floton Africa, we shape environments that elevate daily life,
                   invite pause, and speak through texture and light.
                 </p>
               </Copy>
-            </div>
+            </div> */}
 
             {/* <AnimatedButton
               label="Discover "
@@ -324,8 +324,8 @@ export default function App() {
               <div className="gallery-callout-img gallery-callout-img-2">
                 <img src="/gallery-callout/gallery-callout-2.jpg" alt="" />
                 <div className="gallery-callout-img-content">
-                  <h3>800+</h3>
-                  <p>Project Images</p>
+                  <h3>10+</h3>
+                  <p>Projects</p>
                 </div>
               </div>
             </div>
@@ -342,10 +342,7 @@ export default function App() {
             <div className="gallery-callout-copy">
               <Copy delay={0.1}>
                 <h3>
-                  Take a closer look at the projects that define our practice.
-                  From intimate interiors to expansive landscapes, each image
-                  highlights a unique perspective that might spark your next big
-                  idea.
+                  Floton Africa excels in general contracting and construction management, seamlessly integrating architectural vision with craft and quality control, and creative solutions that align with financial and design goals.
                 </h3>
               </Copy>
               <AnimatedButton label="Explore Gallery" route="blueprints" />

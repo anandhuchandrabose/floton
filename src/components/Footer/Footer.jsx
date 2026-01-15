@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-meta-block">
               <div className="footer-meta-logo">
                 <Copy delay={0.1}>
-                  <h3 className="lg">Terrene</h3>
+                  <h3 className="lg">Floton Africa</h3>
                 </Copy>
               </div>
               <Copy delay={0.2}>
@@ -70,7 +70,7 @@ const Footer = () => {
                     navigateWithTransition("/");
                   }}
                 >
-                  <h3>Index</h3>
+                  <h3>Home</h3>
                 </a>
                 <a
                   href="/studio"
@@ -79,9 +79,9 @@ const Footer = () => {
                     navigateWithTransition("/studio");
                   }}
                 >
-                  <h3>Studio</h3>
+                  <h3>Projects</h3>
                 </a>
-                <a
+                {/* <a
                   href="/spaces"
                   onClick={(e) => {
                     e.preventDefault();
@@ -98,7 +98,7 @@ const Footer = () => {
                   }}
                 >
                   <h3>One Installation</h3>
-                </a>
+                </a> */}
                 <a
                   href="/blueprints"
                   onClick={(e) => {
@@ -106,7 +106,7 @@ const Footer = () => {
                     navigateWithTransition("/blueprints");
                   }}
                 >
-                  <h3>Blueprints</h3>
+                  <h3>About Us</h3>
                 </a>
                 <a
                   href="/connect"

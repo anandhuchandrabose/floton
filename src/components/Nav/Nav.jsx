@@ -217,7 +217,7 @@ const Nav = () => {
             <div className="links">
               <div className="link">
                 <a href="/" onClick={(e) => handleLinkClick(e, "/")}>
-                  <h2>Index</h2>
+                  <h2>Home</h2>
                 </a>
               </div>
               <div className="link">
@@ -225,31 +225,31 @@ const Nav = () => {
                   href="/studio"
                   onClick={(e) => handleLinkClick(e, "/studio")}
                 >
-                  <h2>Studio</h2>
+                  <h2>Projects</h2>
                 </a>
               </div>
-              <div className="link">
+              {/* <div className="link">
                 <a
                   href="/spaces"
                   onClick={(e) => handleLinkClick(e, "/spaces")}
                 >
                   <h2>Our Spaces</h2>
                 </a>
-              </div>
-              <div className="link">
+              </div> */}
+              {/* <div className="link">
                 <a
                   href="/sample-space"
                   onClick={(e) => handleLinkClick(e, "/sample-space")}
                 >
                   <h2>One Installation</h2>
                 </a>
-              </div>
+              </div> */}
               <div className="link">
                 <a
                   href="/blueprints"
                   onClick={(e) => handleLinkClick(e, "/blueprints")}
                 >
-                  <h2>Blueprints</h2>
+                  <h2>About Us</h2>
                 </a>
               </div>
               <div className="link">
@@ -266,21 +266,21 @@ const Nav = () => {
             <div className="socials">
               <div className="sub-col">
                 <div className="menu-meta menu-commissions">
-                  <p>Commissions</p>
-                  <p>build@terrene.studio</p>
-                  <p>+1 (872) 441‑2086</p>
+                  <p>Contact</p>
+                  <p>info@flotonzanzibar.com</p>
+                  <p>+255 7874 9749</p>
                 </div>
                 <div className="menu-meta">
-                  <p>Studio Address</p>
-                  <p>18 Cordova Lane</p>
-                  <p>Seattle, WA 98101</p>
+                  <p>Office Address</p>
+                  <p>Floton Africa</p>
+                  <p>Tanzania</p>
                 </div>
               </div>
               <div className="sub-col">
                 <div className="menu-meta">
                   <p>Social</p>
                   <p>Instagram</p>
-                  <p>Are.na</p>
+                  <p>FaceBook</p>
                   <p>LinkedIn</p>
                 </div>
               </div>

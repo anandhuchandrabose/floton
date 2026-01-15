@@ -77,6 +77,21 @@ const FeaturedProjects = () => {
                   <div className="featured-project-card-description">
                     <p className="lg">{project.description}</p>
                   </div>
+                  {project.stats && (
+                    <div className="featured-project-card-stats">
+                      {project.stats.map((stat, statIndex) => (
+                        <div className="featured-project-card-stat" key={statIndex}>
+                          <div className="featured-project-card-stat-icon" aria-hidden="true">
+                            {stat.icon && <img src={stat.icon} alt="" />}
+                          </div>
+                          <div className="featured-project-card-stat-copy">
+                            <p className="label">{stat.label}</p>
+                            <p className="value">{stat.value}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="featured-project-card-img">
