@@ -46,6 +46,13 @@
   padding: 1rem;
 }
 
+ /* shadow hero */
+
+.hero .hero-header h1 {
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
 .hero .hero-tagline {
   width: 100%;
   max-width: 40rem;

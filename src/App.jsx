@@ -158,7 +158,7 @@ export default function App() {
       <Nav />
       <section className="hero">
         <div className="hero-bg">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          <img src="/gallery-callout/gallery-callout-1.jpeg" alt="" />
         </div>
         <div className="hero-gradient"></div>
         <div className="container">
@@ -319,10 +319,10 @@ export default function App() {
           <div className="gallery-callout-col">
             <div className="gallery-callout-row">
               <div className="gallery-callout-img gallery-callout-img-1">
-                <img src="/gallery-callout/gallery-callout-1.jpg" alt="" />
+                <img src="/gallery-callout/gallery-callout-1.jpeg" alt="" />
               </div>
               <div className="gallery-callout-img gallery-callout-img-2">
-                <img src="/gallery-callout/gallery-callout-2.jpg" alt="" />
+                <img src="/gallery-callout/gallery-callout-2.jpeg" alt="" />
                 <div className="gallery-callout-img-content">
                   <h3>10+</h3>
                   <p>Projects</p>
@@ -331,10 +331,10 @@ export default function App() {
             </div>
             <div className="gallery-callout-row">
               <div className="gallery-callout-img gallery-callout-img-3">
-                <img src="/gallery-callout/gallery-callout-3.jpg" alt="" />
+                <img src="/gallery-callout/gallery-callout-3.jpeg" alt="" />
               </div>
               <div className="gallery-callout-img gallery-callout-img-4">
-                <img src="/gallery-callout/gallery-callout-4.jpg" alt="" />
+                <img src="/gallery-callout/gallery-callout-4.jpeg" alt="" />
               </div>
             </div>
           </div>
