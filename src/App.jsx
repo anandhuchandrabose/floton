@@ -158,14 +158,14 @@ export default function App() {
       <Nav />
       <section className="hero">
         <div className="hero-bg">
-          <img src="/gallery-callout/gallery-callout-1.jpeg" alt="" />
+          <img src="/featured-projects/hero2.jpg" alt="" />
         </div>
         <div className="hero-gradient"></div>
         <div className="container">
           <div className="hero-content">
             <div className="hero-header">
               <Copy animateOnScroll={false} delay={showPreloader ? 4 : 0.85}>
-                <h1>Spaces that feel rooted, human, and quietly bold</h1>
+                <h1>DEVELOPING TIMELESS LIVING IN ZANZIBAR.</h1>
               </Copy>
             </div>
             {/* <div className="hero-tagline">
@@ -249,7 +249,7 @@ export default function App() {
             <Copy delay={0.1}>
               <h1>
                 {/* <span className="spacer">&nbsp;</span> */}
-                Leadership in real estate sector
+                A Development-First Philosophy
 
               </h1>
             </Copy>
@@ -262,9 +262,51 @@ export default function App() {
 
               <Copy delay={0.15}>
                 <p className="lg">
-                  Floton Africa, a pioneer in urban real estate development and Class one construction, thrives on transforming complex urban spaces with exceptional architecture and thoughtful development, driven by a belief in creating lasting value through rigorous analysis and quality design.
+                  Floton Africa is a real estate development company focused on creating high-quality residential and mixed-use assets in emerging prime locations across Zanzibar. We combine land strategy, architectural intelligence, disciplined constructio140n, and market-driven planning to deliver developments that perform—financially, socially, and spatially.
+                  <br />
+                  <br /> <span>We do not build volume.</span>
+                  <br />We do not build volume.
                 </p>
               </Copy>
+              <div className="what-we-do-metrics">
+                <Copy delay={0.2}>
+                  <p className="mono metrics-label">METRICS</p>
+                </Copy>
+                <div className="what-we-do-metrics-grid">
+                  <div className="what-we-do-metric">
+                    <Copy delay={0.25}>
+                      <h3>140+</h3>
+                    </Copy>
+                    <Copy delay={0.3}>
+                      <p>Active &amp; Delivered units</p>
+                    </Copy>
+                  </div>
+                  <div className="what-we-do-metric">
+                    <Copy delay={0.35}>
+                      <h3>100%</h3>
+                    </Copy>
+                    <Copy delay={0.4}>
+                      <p>Project list Compliant with ZIPA &amp; Local Regulations</p>
+                    </Copy>
+                  </div>
+                  <div className="what-we-do-metric">
+                    <Copy delay={0.45}>
+                      <h3>25000+</h3>
+                    </Copy>
+                    <Copy delay={0.5}>
+                      <p>Sqm- Spaces planned, built &amp; under development.</p>
+                    </Copy>
+                  </div>
+                  <div className="what-we-do-metric">
+                    <Copy delay={0.55}>
+                      <h3>14+</h3>
+                    </Copy>
+                    <Copy delay={0.6}>
+                      <p>Years of Engineering &amp; Project Delivery Experience.</p>
+                    </Copy>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* <div className="what-we-do-col">
               <div className="what-we-do-tags" ref={tagsRef}>

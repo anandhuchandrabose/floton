@@ -1,106 +1,106 @@
 const featuredProjectsContent = [
   {
-    info: "An immersive lounge built around a central tree",
-    title: "Sanctum Hall",
+    info: "Zanzibar, coastal living",
+    title: "The Emerald, Paje",
     description:
-      "Circular seating, arched openings, and natural textures create a serene gathering space. The design balances monumentality with intimacy, framing nature as the focal point.",
-    image: "/featured-projects/featured-work-1.jpg",
+      "A refined coastal residence designed for those who value privacy, space, and architectural calm.",
+    image: "/featured-projects/featured-work-5.jpg",
     stats: [
       {
         label: "Property Size",
-        value: "2,400 sq.ft.",
+        value: "7,500 sq.ft.",
         icon: "/icons/property-size.svg",
       },
       {
         label: "Type",
-        value: "Residential, 3-bed, 3-bath",
+        value: "20 Tropical residential villas",
         icon: "/icons/type.svg",
       },
       {
-        label: "Flat Size",
-        value: "2,000 sq.ft.",
+        label: "Unit Size",
+        value: "70 to 190 Sqm",
         icon: "/icons/flat-size.svg",
       },
       { label: "Status", value: "Completed", icon: "/icons/status.svg" },
     ],
   },
   {
-    info: "A private retreat defined by water and sun",
-    title: "Desert Poolhouse",
+    info: "Zanzibar, coastal living",
+    title: "The Emerald Square, Paje",
     description:
-      "Soft stucco walls, a lone palm, and an open sky bring elemental simplicity. The still surface of the pool becomes both mirror and threshold, blurring enclosure and openness.",
-    image: "/featured-projects/featured-work-2.jpg",
+      "The Emerald Square blends modern tropical living with clean geometry and natural light, creating a home that feels timeless and deeply grounded.",
+    image: "/featured-projects/featured-work-2.png",
     stats: [
       {
         label: "Property Size",
-        value: "3,100 sq.ft.",
+        value: "8,000 sq.ft.",
         icon: "/icons/property-size.svg",
       },
       {
         label: "Type",
-        value: "Residential, 4-bed, 4-bath",
+        value: "19 Tropical residential villas",
         icon: "/icons/type.svg",
       },
       {
-        label: "Flat Size",
-        value: "2,450 sq.ft.",
+        label: "Unit Size",
+        value: "70 to 190 Sqm",
         icon: "/icons/flat-size.svg",
       },
-      { label: "Status", value: "In Progress", icon: "/icons/status.svg" },
+      { label: "Status", value: "In Progress (Schedule handover on Feb’26)", icon: "/icons/status.svg" },
     ],
   },
   {
-    info: "A cloister-inspired courtyard with generous arches",
-    title: "Arcade Residence",
+    info: "Zanzibar · Coastal Lifestyle",
+    title: "YOLO Residence",
     description:
-      "Rhythmic colonnades and layered seating zones encourage calm gatherings. Textured stone and filtered light evoke both permanence and ease, rooted in classical geometry.",
-    image: "/featured-projects/featured-work-3.jpg",
+      "A contemporary residential development designed for modern coastal living and strong rental performance.",
+    image: "/featured-projects/featured-work-3.png",
     stats: [
       {
         label: "Property Size",
-        value: "4,200 sq.ft.",
+        value: "8,000 sq.ft.",
         icon: "/icons/property-size.svg",
       },
       {
         label: "Type",
-        value: "Mixed-use, courtyard",
+        value: "52 residential apartments",
         icon: "/icons/type.svg",
       },
       {
-        label: "Flat Size",
-        value: "2,700 sq.ft.",
+        label: "Unit Size",
+        value: "70 to 250 Sqm",
         icon: "/icons/flat-size.svg",
       },
       {
         label: "Status",
-        value: "Under Construction",
+        value: "Schedule commencement on Mar’26",
         icon: "/icons/status.svg",
       },
     ],
   },
   {
-    info: "A refined interior anchored by symmetry and light",
-    title: "Atrium Gallery",
+    info: "Zanzibar. Coastal living",
+    title: "Hola, Paje",
     description:
-      "A quiet procession of columns and a sculptural centerpiece guide the eye toward framed views. Warm plaster walls and soft daylight create a setting of contemplative elegance.",
-    image: "/featured-projects/featured-work-4.jpg",
+      "A vibrant mixed-use destination crafted around movement, community, and contemporary design.Hola Paje brings together residences, retail, and curated social spaces to form a lively urban hub in the heart of Zanzibar.",
+    image: "/featured-projects/featured-work-1.jpg",
     stats: [
       {
         label: "Property Size",
-        value: "5,000 sq.ft.",
+        value: "20,000 sq.ft.",
         icon: "/icons/property-size.svg",
       },
       {
         label: "Type",
-        value: "Cultural, exhibition",
+        value: "50 tropical residential villas & commercial",
         icon: "/icons/type.svg",
       },
       {
-        label: "Flat Size",
-        value: "3,200 sq.ft.",
+        label: "Unit Size",
+        value: "130 to 450Sqm,",
         icon: "/icons/flat-size.svg",
       },
-      { label: "Status", value: "Completed", icon: "/icons/status.svg" },
+      { label: "Status", value: "Schedule commencement on Mar’26", icon: "/icons/status.svg" },
     ],
   },
 ];
