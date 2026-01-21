@@ -266,7 +266,7 @@ export default function App() {
 
               <Copy delay={0.15}>
                 <p className="lg">
-                  Floton Africa is a real estate development company focused on creating high-quality residential and mixed-use assets in emerging prime locations across Zanzibar. We combine land strategy, architectural intelligence, disciplined constructio140n, and market-driven planning to deliver developments that perform—financially, socially, and spatially.
+                  Floton Africa is a real estate development company focused on creating high-quality residential and mixed-use assets in emerging prime locations across Zanzibar. We combine land strategy, architectural intelligence, disciplined construction, and market-driven planning to deliver developments that perform—financially, socially, and spatially.
                   <br />
                   <br /> <span>We do not build volume.</span>
                   <br />We build value.
