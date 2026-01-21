@@ -261,7 +261,7 @@ export default function App() {
           <div className="what-we-do-content">
             <div className="what-we-do-col">
               <Copy delay={0.1}>
-                <p>How we work</p>
+                <p>About</p>
               </Copy>
 
               <Copy delay={0.15}>
