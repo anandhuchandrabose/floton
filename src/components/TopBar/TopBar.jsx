@@ -79,9 +79,9 @@ const TopBar = () => {
           <img src="/logos/terrene-logo-symbol.png" alt="" />
         </a>
       </div>
-      <div className="top-bar-cta">
+      {/* <div className="top-bar-cta">
         <AnimatedButton label="Reserve" route="/connect" animate={false} />
-      </div>
+      </div> */}
     </div>
   );
 };
