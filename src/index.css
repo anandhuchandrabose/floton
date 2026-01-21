@@ -105,6 +105,13 @@
   flex: 0;
 }
 
+.hero .hero-stats .stat-count h2,
+.hero .hero-stats .stat-count h3 {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
 .hero .hero-stats .stat-divider {
   width: 100%;
   height: 1px;

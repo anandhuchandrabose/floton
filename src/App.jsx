@@ -200,6 +200,7 @@ export default function App() {
                   <p>Class One Registered Developer & Contractor</p>
                 </Copy>
               </div> */}
+              <div className="stat-divider"></div>
             </div>
             <div className="stat">
               <div className="stat-count">
@@ -213,11 +214,12 @@ export default function App() {
                   <p>Ongoing spatial explorations</p>
                 </Copy>
               </div> */}
+              <div className="stat-divider"></div>
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.3}>
-                  <h3>Active projects across Zanzibar & mainland Tanzania</h3>
+                  <h3>Active projects across Zanzibar <br/> & <br/>mainland Tanzania</h3>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
@@ -226,6 +228,7 @@ export default function App() {
                   <p>Cross-disciplinary collaborators</p>
                 </Copy>
               </div> */}
+              <div className="stat-divider"></div>
             </div>
             <div className="stat">
               <div className="stat-count">
@@ -239,6 +242,7 @@ export default function App() {
                   <p>Return rate across commissions</p>
                 </Copy>
               </div> */}
+              <div className="stat-divider"></div>
             </div>
           </div>
         </div>
@@ -265,7 +269,7 @@ export default function App() {
                   Floton Africa is a real estate development company focused on creating high-quality residential and mixed-use assets in emerging prime locations across Zanzibar. We combine land strategy, architectural intelligence, disciplined constructio140n, and market-driven planning to deliver developments that perform—financially, socially, and spatially.
                   <br />
                   <br /> <span>We do not build volume.</span>
-                  <br />We do not build volume.
+                  <br />We build value.
                 </p>
               </Copy>
               <div className="what-we-do-metrics">
