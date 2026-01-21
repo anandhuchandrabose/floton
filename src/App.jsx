@@ -191,54 +191,54 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.1}>
-                  <h2>225+</h2>
+                  <h3>Class One Registered Developer & Contractor</h3>
                 </Copy>
               </div>
-              <div className="stat-divider"></div>
+              {/* <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy animateOnScroll={false} delay={0.15}>
-                  <p>Completed design studies</p>
+                  <p>Class One Registered Developer & Contractor</p>
                 </Copy>
-              </div>
+              </div> */}
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.2}>
-                  <h2>36</h2>
+                  <h3>End-to-end development & construction capability</h3>
                 </Copy>
               </div>
-              <div className="stat-divider"></div>
+              {/* <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy animateOnScroll={false} delay={0.25}>
                   <p>Ongoing spatial explorations</p>
                 </Copy>
-              </div>
+              </div> */}
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.3}>
-                  <h2>12</h2>
+                  <h3>Active projects across Zanzibar & mainland Tanzania</h3>
                 </Copy>
               </div>
-              <div className="stat-divider"></div>
+              {/* <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy animateOnScroll={false} delay={0.35}>
                   <p>Cross-disciplinary collaborators</p>
                 </Copy>
-              </div>
+              </div> */}
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.4}>
-                  <h2>98%</h2>
+                  <h3>Strong institutional, landowner, and government alignment</h3>
                 </Copy>
               </div>
-              <div className="stat-divider"></div>
+              {/* <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy animateOnScroll={false} delay={0.45}>
                   <p>Return rate across commissions</p>
                 </Copy>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -348,14 +348,120 @@ export default function App() {
         </div>
         <FeaturedProjects />
       </section>
-      <section className="client-reviews-container">
+      <section className="development-pillars">
+        <div className="container">
+          <div className="development-pillars-header">
+            <div className="development-pillars-callout">
+              <Copy delay={0.1}>
+                <p className="mono">How we develop</p>
+              </Copy>
+            </div>
+            <div className="development-pillars-title">
+              <Copy delay={0.15}>
+                <h2>FOUR PILLARS</h2>
+              </Copy>
+            </div>
+          </div>
+          <div className="development-pillars-grid">
+            <div className="development-pillar">
+              <Copy delay={0.2}>
+                <p className="mono pillar-index">01</p>
+              </Copy>
+              <Copy delay={0.25}>
+                <h3>Land &amp; Location Strategy</h3>
+              </Copy>
+              <Copy delay={0.3}>
+                <p>
+                  We secure sites with long-term desirability—beachfront, view
+                  corridors, access, and infrastructure growth.
+                </p>
+              </Copy>
+            </div>
+            <div className="development-pillar">
+              <Copy delay={0.35}>
+                <p className="mono pillar-index">02</p>
+              </Copy>
+              <Copy delay={0.4}>
+                <h3>Architecture &amp; Planning</h3>
+              </Copy>
+              <Copy delay={0.45}>
+                <p>
+                  Every development is guided by proportion, climate response,
+                  and timeless materiality—not trends.
+                </p>
+              </Copy>
+            </div>
+            <div className="development-pillar">
+              <Copy delay={0.5}>
+                <p className="mono pillar-index">03</p>
+              </Copy>
+              <Copy delay={0.55}>
+                <h3>Construction &amp; Delivery</h3>
+              </Copy>
+              <Copy delay={0.6}>
+                <p>
+                  In-house Class One construction ensures quality, cost control,
+                  and on-time delivery.
+                </p>
+              </Copy>
+            </div>
+            <div className="development-pillar">
+              <Copy delay={0.65}>
+                <p className="mono pillar-index">04</p>
+              </Copy>
+              <Copy delay={0.7}>
+                <h3>Asset &amp; Investment Thinking</h3>
+              </Copy>
+              <Copy delay={0.75}>
+                <p>
+                  Each project is structured to retain value, rental appeal, and
+                  resale strength.
+                </p>
+              </Copy>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="construction-section">
+        <div className="container">
+          <div className="construction-header">
+            <Copy delay={0.1}>
+              <p className="mono">Construction Section</p>
+            </Copy>
+            <Copy delay={0.15}>
+              <h2>Integrated Development &amp; Construction</h2>
+            </Copy>
+          </div>
+          <div className="construction-body">
+            <Copy delay={0.2}>
+              <p className="lg">
+                Unlike most developers, Floton Africa maintains direct control
+                over construction execution.
+              </p>
+            </Copy>
+            <Copy delay={0.25}>
+              <p>
+                This integration ensures design intent is preserved, quality is
+                uncompromised, and risks are managed professionally.
+              </p>
+            </Copy>
+            <Copy delay={0.3}>
+              <p>Construction is not our product.</p>
+            </Copy>
+            <Copy delay={0.35}>
+              <p>It is our advantage.</p>
+            </Copy>
+          </div>
+        </div>
+      </section>
+      {/* <section className="client-reviews-container">
         <div className="container">
           <div className="client-reviews-header-callout">
             <p>Voices from our spaces</p>
           </div>
           <ClientReviews />
         </div>
-      </section>
+      </section> */}
       <section className="gallery-callout">
         <div className="container">
           <div className="gallery-callout-col">
@@ -394,9 +500,9 @@ export default function App() {
       </section>
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Floton Africa"
+        header="Developing Places That Last"
         callout="Spaces that breathe with time"
-        description="Our approach is guided by rhythm, proportion, and light, allowing every environment to grow more meaningful as it is lived in."
+        description="Luxury real estate development shaped by purpose, precision, and permanence."
       />
       <ConditionalFooter />
     </>
