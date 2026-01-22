@@ -53,9 +53,13 @@
     0 2px 6px rgba(0, 0, 0, 0.45);
 } */
 
-.hero .hero-header  {
+/* .hero .hero-header  {
   text-shadow: 0 10px 24px rgba(0, 0, 0, 0.35),
     0 2px 6px rgba(0, 0, 0, 0.45);
+} */
+
+.hero .hero-header h1 {
+  letter-spacing: 0.05rem;
 }
 
 .hero .hero-tagline {
@@ -84,6 +88,7 @@
   display: flex;
   gap: 1rem;
   width: 100%;
+  max-width: 90rem;
   align-items: stretch;
 }
 
@@ -103,6 +108,13 @@
 .hero .hero-stats .stat-count,
 .hero .hero-stats .stat-info {
   flex: 0;
+}
+
+.hero .hero-stats .stat-count p {
+  color: var(--base-200);
+  font-size: 1.5rem;
+  /* margin-bottom: 0.5rem; */
+
 }
 
 .hero .hero-stats .stat-count h2,
@@ -154,7 +166,7 @@
   color: var(--base-100);
 }
 
-.what-we-do .container h1 {
+.what-we-do .container h2 {
   margin-bottom: 3rem;
   text-align: center;
   margin-left: auto;
@@ -180,6 +192,8 @@
   gap: 1rem;
 }
 
+
+
 .what-we-do .what-we-do-col:nth-child(1) p.lg {
   color: var(--base-300);
   width: 100%;
@@ -204,6 +218,10 @@
 .what-we-do .what-we-do-metrics .metrics-label {
   color: var(--base-250);
   letter-spacing: 0.2rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .what-we-do .what-we-do-metrics-grid {
@@ -228,6 +246,7 @@
   color: var(--base-100);
   font-size: 2.1rem;
   letter-spacing: -0.05rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .what-we-do .what-we-do-metric p {
@@ -291,6 +310,12 @@
   margin-bottom: 2rem;
 }
 
+.featured-projects-container .featured-projects-header-callout .mono {
+  color: var(--base-350);
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+}
+
 .featured-projects-container .featured-projects-header {
   width: 80%;
   max-width: 1100px;
@@ -328,6 +353,7 @@
 .development-pillars .development-pillars-callout .mono {
   color: var(--base-350);
   letter-spacing: 0.2rem;
+  font-size: 1.1rem;
 }
 
 .development-pillars .development-pillars-grid {
@@ -384,6 +410,7 @@
 .construction-section .construction-header .mono {
   color: var(--base-350);
   letter-spacing: 0.2rem;
+  font-size: 1.1rem;
 }
 
 .construction-section .construction-body {

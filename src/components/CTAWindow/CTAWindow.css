@@ -6,6 +6,9 @@
   padding: 1rem;
 }
 
+
+
+
 .cta-window .container {
   position: relative;
   background-color: var(--base-450);
@@ -44,7 +47,10 @@
 }
 
 .cta-window .cta-window-header h1 {
-  font-size: 10vw;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: -0.25rem;
+  line-height: 1.3;
 }
 
 .cta-window .cta-window-footer {
@@ -63,12 +69,13 @@
 }
 
 .cta-window .cta-window-footer .cta-window-description {
-  width: 25%;
+  width: 40%;
   text-align: right;
 }
 
 .cta-window .cta-window-footer p {
-  color: var(--base-300);
+  color: var(--base-200);
+  font-size: 1.3rem;
 }
 
 @media (max-width: 1000px) {

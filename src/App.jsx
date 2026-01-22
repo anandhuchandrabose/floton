@@ -22,6 +22,7 @@ CustomEase.create("hop", "0.9, 0, 0.1, 1");
 
 export default function App() {
   const tagsRef = useRef(null);
+  const metricsRef = useRef(null);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
   const lenis = useLenis();
@@ -131,6 +132,48 @@ export default function App() {
     { scope: tagsRef }
   );
 
+  useGSAP(
+    () => {
+      if (!metricsRef.current) return;
+
+      const valueNodes = metricsRef.current.querySelectorAll(".metric-value");
+      if (!valueNodes.length) return;
+
+      valueNodes.forEach((node) => {
+        const suffix = node.dataset.suffix || "";
+        const prefix = node.dataset.prefix || "";
+        node.textContent = `${prefix}0${suffix}`;
+      });
+
+      valueNodes.forEach((node, index) => {
+        const target = Number.parseFloat(node.dataset.count || "0");
+        const suffix = node.dataset.suffix || "";
+        const prefix = node.dataset.prefix || "";
+        const decimals = Number(node.dataset.decimals || 0);
+        const counter = { value: 0 };
+
+        gsap.to(counter, {
+          value: target,
+          duration: 1.6,
+          ease: "power2.out",
+          delay: index * 0.15,
+          scrollTrigger: {
+            trigger: metricsRef.current,
+            start: "top 80%",
+            once: true,
+          },
+          onUpdate: () => {
+            const current = decimals
+              ? counter.value.toFixed(decimals)
+              : Math.round(counter.value).toString();
+            node.textContent = `${prefix}${current}${suffix}`;
+          },
+        });
+      });
+    },
+    { scope: metricsRef }
+  );
+
   return (
     <>
       {showPreloader && (
@@ -191,7 +234,7 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.1}>
-                  <h3>Class One Registered Developer & Contractor</h3>
+                  <p>Class One Registered Developer & Contractor</p>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
@@ -205,7 +248,7 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.2}>
-                  <h3>End-to-end development & construction capability</h3>
+                  <p>End-to-end development & construction capability</p>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
@@ -219,7 +262,7 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.3}>
-                  <h3>Active projects across Zanzibar <br/> & <br/>mainland Tanzania</h3>
+                  <p>Active projects across Zanzibar <br/> & <br/>mainland Tanzania</p>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
@@ -233,7 +276,7 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.4}>
-                  <h3>Strong institutional, landowner, and government alignment</h3>
+                  <p>Strong institutional, landowner, and government alignment</p>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
@@ -251,17 +294,17 @@ export default function App() {
         <div className="container">
           <div className="what-we-do-header">
             <Copy delay={0.1}>
-              <h1>
+              <h2>
                 {/* <span className="spacer">&nbsp;</span> */}
                 A Development-First Philosophy
 
-              </h1>
+              </h2>
             </Copy>
           </div>
           <div className="what-we-do-content">
             <div className="what-we-do-col">
               <Copy delay={0.1}>
-                <p>About Us</p>
+                <h3>About Us</h3>
               </Copy>
 
               <Copy delay={0.15}>
@@ -272,39 +315,47 @@ export default function App() {
                   <br />We build value.
                 </p>
               </Copy>
-              <div className="what-we-do-metrics">
+              <div className="what-we-do-metrics" ref={metricsRef}>
                 <Copy delay={0.2}>
-                  <p className="mono metrics-label">METRICS</p>
+                  <p className="metrics-label">METRICS</p>
                 </Copy>
                 <div className="what-we-do-metrics-grid">
                   <div className="what-we-do-metric">
-                    <Copy delay={0.25}>
-                      <h3>140+</h3>
-                    </Copy>
+                    <h3>
+                      <span className="metric-value" data-count="140" data-suffix="+">
+                        140+
+                      </span>
+                    </h3>
                     <Copy delay={0.3}>
                       <p>Active &amp; Delivered units</p>
                     </Copy>
                   </div>
                   <div className="what-we-do-metric">
-                    <Copy delay={0.35}>
-                      <h3>100%</h3>
-                    </Copy>
+                    <h3>
+                      <span className="metric-value" data-count="100" data-suffix="%">
+                        100%
+                      </span>
+                    </h3>
                     <Copy delay={0.4}>
                       <p>Project list Compliant with ZIPA &amp; Local Regulations</p>
                     </Copy>
                   </div>
                   <div className="what-we-do-metric">
-                    <Copy delay={0.45}>
-                      <h3>25000+</h3>
-                    </Copy>
+                    <h3>
+                      <span className="metric-value" data-count="25000" data-suffix="+">
+                        25000+
+                      </span>
+                    </h3>
                     <Copy delay={0.5}>
                       <p>Sqm- Spaces planned, built &amp; under development.</p>
                     </Copy>
                   </div>
                   <div className="what-we-do-metric">
-                    <Copy delay={0.55}>
-                      <h3>14+</h3>
-                    </Copy>
+                    <h3>
+                      <span className="metric-value" data-count="14" data-suffix="+">
+                        14+
+                      </span>
+                    </h3>
                     <Copy delay={0.6}>
                       <p>Years of Engineering &amp; Project Delivery Experience.</p>
                     </Copy>
@@ -362,7 +413,7 @@ export default function App() {
             </div>
             <div className="development-pillars-title">
               <Copy delay={0.15}>
-                <h2>FOUR PILLARS</h2>
+                <h3>FOUR PILLARS</h3>
               </Copy>
             </div>
           </div>

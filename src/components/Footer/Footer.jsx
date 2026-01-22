@@ -151,7 +151,7 @@ const Footer = () => {
       <div className="footer-outro">
         <div className="container">
           <div className="footer-header">
-            <img src="/logos/falogog.png" alt="" />
+            <img src="/logos/FlotonAfrica-Logo-White.png" alt="" />
           </div>
           <div className="footer-copyright">
             <p>
