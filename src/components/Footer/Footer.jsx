@@ -56,7 +56,7 @@ const Footer = () => {
                 </Copy>
               </div>
               <Copy delay={0.2}>
-                <h2>Spaces made simple, thoughtful, lasting.</h2>
+                <h3>Spaces made simple, thoughtful, lasting.</h3>
               </Copy>
             </div>
           </div>
@@ -130,9 +130,9 @@ const Footer = () => {
               <div className="icon">
                 <RiInstagramLine />
               </div>
-              <div className="icon">
+              {/* <div className="icon">
                 <RiDribbbleLine />
-              </div>
+              </div> */}
               <div className="icon">
                 <RiYoutubeLine />
               </div>

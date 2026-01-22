@@ -262,7 +262,7 @@ export default function App() {
             <div className="stat">
               <div className="stat-count">
                 <Copy animateOnScroll={false} delay={0.3}>
-                  <p>Active projects across Zanzibar <br/> & <br/>mainland Tanzania</p>
+                  <p>Active projects across Zanzibar & mainland Tanzania</p>
                 </Copy>
               </div>
               {/* <div className="stat-divider"></div>
