@@ -392,7 +392,7 @@ export default function App() {
         <div className="container">
           <div className="featured-projects-header-callout">
             <Copy delay={0.1}>
-              <p>Featured work</p>
+              <p className="mono">Featured work</p>
             </Copy>
           </div>
           <div className="featured-projects-header">
