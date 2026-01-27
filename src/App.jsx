@@ -548,7 +548,7 @@ export default function App() {
                   Floton Africa excels in general contracting and construction management, seamlessly integrating architectural vision with craft and quality control, and creative solutions that align with financial and design goals.
                 </h3>
               </Copy>
-              <AnimatedButton label="Explore Gallery" route="blueprints" />
+              {/* <AnimatedButton label="Explore Gallery" route="blueprints" /> */}
             </div>
           </div>
         </div>
