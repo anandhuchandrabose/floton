@@ -15,6 +15,7 @@ import Copy from "@/components/Copy/Copy";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
 import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import Nav from "@/components/Nav/Nav";
+import ProjectsPage from "@/components/Projects/ProjectsPage";
 
 let isInitialLoad = true;
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -23,9 +24,27 @@ CustomEase.create("hop", "0.9, 0, 0.1, 1");
 export default function App() {
   const tagsRef = useRef(null);
   const metricsRef = useRef(null);
+  const [route, setRoute] = useState(() => window.location.pathname);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
   const lenis = useLenis();
+  const normalizedRoute =
+    route.length > 1 && route.endsWith("/") ? route.slice(0, -1) : route;
+  const isHomeRoute = normalizedRoute === "/";
+  const isProjectsRoute =
+    normalizedRoute === "/studio" || normalizedRoute.startsWith("/studio/");
+  const activeProjectSlug = normalizedRoute.startsWith("/studio/")
+    ? normalizedRoute.replace("/studio/", "")
+    : null;
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setRoute(window.location.pathname);
+    };
+
+    window.addEventListener("popstate", handleRouteChange);
+    return () => window.removeEventListener("popstate", handleRouteChange);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -44,6 +63,8 @@ export default function App() {
   }, [lenis, loaderAnimating]);
 
   useGSAP(() => {
+    if (!isHomeRoute) return;
+
     const tl = gsap.timeline({
       delay: 0.3,
       defaults: {
@@ -107,10 +128,11 @@ export default function App() {
         "<"
       );
     }
-  }, [showPreloader]);
+  }, [showPreloader, isHomeRoute]);
 
   useGSAP(
     () => {
+      if (!isHomeRoute) return;
       if (!tagsRef.current) return;
 
       const tags = tagsRef.current.querySelectorAll(".what-we-do-tag");
@@ -129,11 +151,12 @@ export default function App() {
         }),
       });
     },
-    { scope: tagsRef }
+    { scope: tagsRef, dependencies: [isHomeRoute] }
   );
 
   useGSAP(
     () => {
+      if (!isHomeRoute) return;
       if (!metricsRef.current) return;
 
       const valueNodes = metricsRef.current.querySelectorAll(".metric-value");
@@ -171,12 +194,22 @@ export default function App() {
         });
       });
     },
-    { scope: metricsRef }
+    { scope: metricsRef, dependencies: [isHomeRoute] }
   );
+
+  if (isProjectsRoute) {
+    return (
+      <>
+        <Nav />
+        <ProjectsPage activeSlug={activeProjectSlug} />
+        <ConditionalFooter />
+      </>
+    );
+  }
 
   return (
     <>
-      {showPreloader && (
+      {showPreloader && isHomeRoute && (
         <div className="loader">
           <div className="overlay">
             <div className="block"></div>

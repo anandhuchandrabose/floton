@@ -15,6 +15,16 @@ export const useViewTransition = () => {
       return;
     }
 
+    const url = new URL(href, window.location.origin);
+    const nextPath = url.pathname;
+
+    if (nextPath.startsWith("/studio")) {
+      window.history.pushState({}, "", nextPath);
+      window.dispatchEvent(new PopStateEvent("popstate"));
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
     console.warn(
       `[navigateWithTransition] Navigation to "${href}" is not wired in the Vite build.`
     );
