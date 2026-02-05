@@ -1,5 +1,6 @@
 const featuredProjectsContent = [
   {
+    slug: "the-emerald-paje",
     info: "Zanzibar, coastal living",
     title: "The Emerald, Paje",
     description:
@@ -25,6 +26,7 @@ const featuredProjectsContent = [
     ],
   },
   {
+    slug: "the-emerald-square-paje",
     info: "Zanzibar, coastal living",
     title: "The Emerald Square, Paje",
     description:
@@ -50,6 +52,7 @@ const featuredProjectsContent = [
     ],
   },
   {
+    slug: "yolo-residence",
     info: "Zanzibar · Coastal Lifestyle",
     title: "YOLO Residence",
     description:
@@ -79,6 +82,7 @@ const featuredProjectsContent = [
     ],
   },
   {
+    slug: "hola-paje",
     info: "Zanzibar. Coastal living",
     title: "Hola, Paje",
     description:

@@ -1,14 +1,38 @@
 import "./ProjectsPage.css";
 
+import { useEffect, useState } from "react";
 import projectsContent from "./projects-content";
 import { useViewTransition } from "@/hooks/useViewTransition";
 
 const ProjectsPage = ({ activeSlug }) => {
   const { navigateWithTransition } = useViewTransition();
+  const [heroLoaded, setHeroLoaded] = useState(false);
+  const [galleryLoaded, setGalleryLoaded] = useState([]);
 
   const activeProject = activeSlug
     ? projectsContent.find((project) => project.slug === activeSlug)
     : null;
+
+  useEffect(() => {
+    if (!activeProject) {
+      setHeroLoaded(false);
+      setGalleryLoaded([]);
+      return;
+    }
+    setHeroLoaded(false);
+    setGalleryLoaded(Array(activeProject.gallery.length).fill(false));
+  }, [activeProject?.id]);
+
+  const handleGalleryLoad = (index) => {
+    setGalleryLoaded((prev) => {
+      if (prev[index]) {
+        return prev;
+      }
+      const next = [...prev];
+      next[index] = true;
+      return next;
+    });
+  };
 
   const handleNavigate = (event, href) => {
     if (event) {
@@ -50,8 +74,20 @@ const ProjectsPage = ({ activeSlug }) => {
               Back to projects
             </a>
             <div className="project-detail-hero">
-              <div className="project-hero-image">
-                <img src={activeProject.heroImage} alt={activeProject.title} />
+              <div
+                className={`project-hero-image image-shell${
+                  heroLoaded ? " is-loaded" : ""
+                }`}
+              >
+                <img
+                  src={activeProject.heroImage}
+                  alt={activeProject.title}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  onLoad={() => setHeroLoaded(true)}
+                  onError={() => setHeroLoaded(true)}
+                />
               </div>
               <div className="project-hero-info">
                 <p className="mono">{activeProject.location}</p>
@@ -107,14 +143,17 @@ const ProjectsPage = ({ activeSlug }) => {
                 {activeProject.gallery.map((image, index) => (
                   <div
                     key={`${activeProject.id}-gallery-${index}`}
-                    className={`project-gallery-item${
+                    className={`project-gallery-item image-shell${
                       index % 6 === 0 ? " wide" : ""
-                    }`}
+                    }${galleryLoaded[index] ? " is-loaded" : ""}`}
                   >
                     <img
                       src={image}
                       alt={`${activeProject.title} gallery ${index + 1}`}
                       loading="lazy"
+                      decoding="async"
+                      onLoad={() => handleGalleryLoad(index)}
+                      onError={() => handleGalleryLoad(index)}
                     />
                   </div>
                 ))}

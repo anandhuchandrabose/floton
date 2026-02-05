@@ -3,11 +3,21 @@ import "./FeaturedProjects.css";
 import featuredProjectsContent from "./featured-projects-content";
 
 import { useEffect } from "react";
+import { useViewTransition } from "@/hooks/useViewTransition";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const FeaturedProjects = () => {
+  const { navigateWithTransition } = useViewTransition();
+
+  const handleNavigate = (event, href) => {
+    if (event) {
+      event.preventDefault();
+    }
+    navigateWithTransition(href);
+  };
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -91,6 +101,17 @@ const FeaturedProjects = () => {
                         </div>
                       ))}
                     </div>
+                  )}
+                  {project.slug && (
+                    <a
+                      className="featured-project-card-cta"
+                      href={`/studio/${project.slug}`}
+                      onClick={(event) =>
+                        handleNavigate(event, `/studio/${project.slug}`)
+                      }
+                    >
+                      View details
+                    </a>
                   )}
                 </div>
               </div>
