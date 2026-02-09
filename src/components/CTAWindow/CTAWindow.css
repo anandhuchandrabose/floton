@@ -76,6 +76,7 @@
 .cta-window .cta-window-footer p {
   color: var(--base-200);
   font-size: 1.3rem;
+  line-height: 1.85;
 }
 
 @media (max-width: 1000px) {
